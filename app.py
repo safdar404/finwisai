@@ -85,6 +85,9 @@ button[kind="primary"]:hover,button[kind="primaryFormSubmit"]:hover{background:#
 </style>
 """, unsafe_allow_html=True)
 
+from aesthetic_theme import apply_theme
+apply_theme()
+
 # ═════════════════════════════════════════════════════════════════════════
 # Session state
 # ═════════════════════════════════════════════════════════════════════════
@@ -545,3 +548,4 @@ else:
         f"finwise-{datetime.now():%Y%m%d}.json", "application/json", width="stretch")
 
 st.markdown(f'<div class="fw-foot">{html.escape(C.DISCLAIMER)}</div>', unsafe_allow_html=True)
+
