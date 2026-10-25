@@ -87,6 +87,8 @@ button[kind="primary"]:hover,button[kind="primaryFormSubmit"]:hover{background:#
 
 from aesthetic_theme import apply_theme
 apply_theme()
+from purple_palette import apply_palette
+apply_palette()
 
 # ═════════════════════════════════════════════════════════════════════════
 # Session state
