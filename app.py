@@ -7,7 +7,6 @@ returns structured JSON (src/chains.py) -> dashboard -> streamed recommendation.
 Educational prototype only — not financial advice.
 """
 from __future__ import annotations
-from src import config as C
 
 import html
 import json
