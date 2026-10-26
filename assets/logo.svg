@@ -1,1 +1,40 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="112" height="112" viewBox="0 0 112 112" role="img" aria-label="FinWise AI logo"><defs><linearGradient id="g" x2="1" y2="1"><stop stop-color="#47d2b3"/><stop offset=".48" stop-color="#3b82a0"/><stop offset="1" stop-color="#6c82c1"/></linearGradient><linearGradient id="b" x2="1" y2="1"><stop stop-color="#30365c"/><stop offset="1" stop-color="#111a32"/></linearGradient></defs><rect x="5" y="5" width="102" height="102" rx="29" fill="#060c20"/><rect x="3" y="2" width="106" height="104" rx="29" fill="url(#b)" stroke="url(#g)" stroke-width="3"/><path d="M25 12h59" stroke="#ffffff" stroke-opacity=".18" stroke-width="2" stroke-linecap="round"/><path d="M27 69V54h11v15m10 0V43h11v26m10 0V31h11v38" fill="none" stroke="white" stroke-width="4" stroke-linejoin="round"/><path d="m26 43 20-11 15 2 20-17m-12 0h12v12" fill="none" stroke="#99f0d2" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M23 78h63" stroke="#cdbbff" stroke-width="3" stroke-linecap="round"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="rb" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FF4D8D"/>
+      <stop offset="0.2" stop-color="#FF9F43"/>
+      <stop offset="0.4" stop-color="#FFD93D"/>
+      <stop offset="0.6" stop-color="#3DDC97"/>
+      <stop offset="0.8" stop-color="#4D96FF"/>
+      <stop offset="1" stop-color="#B65CFF"/>
+    </linearGradient>
+    <linearGradient id="face" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1E1B3A"/>
+      <stop offset="1" stop-color="#0E0C22"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- outer rainbow ring -->
+  <circle cx="64" cy="64" r="60" fill="none" stroke="url(#rb)" stroke-width="6"/>
+  <!-- antenna -->
+  <line x1="64" y1="14" x2="64" y2="30" stroke="url(#rb)" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="64" cy="13" r="5.5" fill="#FFD93D" filter="url(#glow)"/>
+  <!-- ears -->
+  <rect x="17" y="54" width="9" height="22" rx="4" fill="url(#rb)"/>
+  <rect x="102" y="54" width="9" height="22" rx="4" fill="url(#rb)"/>
+  <!-- head -->
+  <rect x="26" y="30" width="76" height="68" rx="22" fill="url(#face)" stroke="url(#rb)" stroke-width="4"/>
+  <!-- visor -->
+  <rect x="36" y="44" width="56" height="24" rx="12" fill="#0A0919" stroke="#2B2852" stroke-width="2"/>
+  <!-- eyes -->
+  <circle cx="52" cy="56" r="6" fill="#3DE8FF" filter="url(#glow)"/>
+  <circle cx="76" cy="56" r="6" fill="#FF4DC4" filter="url(#glow)"/>
+  <!-- growth bars (mouth) -->
+  <rect x="44" y="82" width="7" height="8" rx="2" fill="#FF9F43"/>
+  <rect x="54" y="78" width="7" height="12" rx="2" fill="#FFD93D"/>
+  <rect x="64" y="75" width="7" height="15" rx="2" fill="#3DDC97"/>
+  <rect x="74" y="72" width="7" height="18" rx="2" fill="#4D96FF"/>
+</svg>
